@@ -2,59 +2,69 @@
 
 body{
 	font-family:Verdana, Geneva, sans-serif;
+	color:white;
+	background-color:black;
 }
 
-/* Main div */
-#main{
-	width: 100%;
-	height:700px;
+.clear_a{
+	text-decoration:none;
+	color:white;
 }
 
 /* Page headder */
 #header{
 	width:100%;
-	height:20%;
-	background-color:yellow;
+	float:left;
+	background-color:#222;
 }
 
-/* Page body */
-#body{
-	width:100%;
-	height:70%;
-	background-color:blue;
+#headImgBox{
+	float:left;
+	width:200px;
+	height:200px;
+	margin:10px;
 }
 
-	#inbody{
-		width:100%;
-		height:98%;
-	}
+#headImg{
+	width:200px;
+	height:200px;
+}
+
+#headTitleBox{
+	float:left;
+	margin-right:10px;
+	height:200px;
+}
+
+#headTitle{
+	color:white;
+	position:relative;
+	top:30%;
+	margin:10px;
+}
 	
-	/* Page menu */
-	#menu{
-		width:22%;
-		height:98%;
-		margin:10px;
-		margin-right:0px;
-		float:left;
-		overflow:auto;
-		background-color:red;
-	}
-	/* Page content */
-	#content{
-		width:72%;
-		height:98%;
-		margin:10px;
-		margin-left:0px;
-		float:right;
-		overflow:auto;
-		background-color:red;
-	}
+/* Page menu */
+#menu{
+	width:100%;
+	float:left;
+	background-color:#555;
+}
+
+/* Page content */
+#content{
+	width:100%;
+	float:left;
+	background-color:#777;
+}
 
 /* Page fotter */
 #footer{
-	width: 100%;
-	height:10%;
+	width:100%;
 	float:left;
-	background-color:green;
+	background-color:#222;
+}
+#footer h6{ 
+	margin-right:10px;
+	text-align:right;
 }
 
