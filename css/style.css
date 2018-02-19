@@ -1,19 +1,30 @@
 /* CSS Document */
+*{
+	margin: auto;
+	padding: auto;
+}
 
 body{
 	font-family:Verdana, Geneva, sans-serif;
 	color:white;
 	background-color:black;
+	padding: 5px;
 }
 
-.clear_a{
+a{
 	text-decoration:none;
 	color:white;
+}
+
+#goup{
+	float: right;
+	margin: 10px;
 }
 
 /* Page headder */
 #header{
 	width:100%;
+	margin-bottom: 5px;
 	float:left;
 	background-color:#222;
 }
@@ -42,29 +53,57 @@ body{
 	top:30%;
 	margin:10px;
 }
-	
+
 /* Page menu */
 #menu{
 	width:100%;
+	padding-top: 5px;
+	margin-bottom: 5px;
 	float:left;
 	background-color:#555;
+}
+.m_div{
+	margin-left: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	float:left;
+	background-color: #666;
+}
+.m_div *{
+	margin: 10px;
 }
 
 /* Page content */
 #content{
 	width:100%;
+	margin-bottom: 5px;
+	padding-top: 10px;
 	float:left;
 	background-color:#777;
+	text-align: center;
+}
+.cont_box{
+	padding: 15px;
+	float: left;
+	background-color: #888;
+	margin: 15px;
+	margin-right: 0px;
+}
+.clear_cont{
+	margin: 15px;
+	float: left;
+	text-align: left;
 }
 
 /* Page fotter */
 #footer{
 	width:100%;
+	padding-top:10px;
+	padding-bottom:10px;
 	float:left;
 	background-color:#222;
 }
-#footer h6{ 
+#footer *{
 	margin-right:10px;
 	text-align:right;
 }
-
