@@ -3,57 +3,49 @@
 	margin: auto;
 	padding: auto;
 }
-
 body{
 	font-family:Verdana, Geneva, sans-serif;
 	color:white;
-	background-color:black;
+	background-color:#000000;
 	padding: 5px;
 }
-
 a{
 	text-decoration:none;
 	color:white;
 }
-
 #goup{
 	float: right;
 	margin: 10px;
 }
-
 /* Page headder */
 #header{
 	width:100%;
 	margin-bottom: 5px;
 	float:left;
-	background-color:#222;
+	background-color:#1F1F1F;
 }
-
 #headImgBox{
 	float:left;
 	width:200px;
 	height:200px;
 	margin:10px;
+	margin-right: 25px;
 }
-
 #headImg{
 	width:200px;
 	height:200px;
 }
-
 #headTitleBox{
 	float:left;
 	margin-right:10px;
 	height:200px;
 }
-
 #headTitle{
 	color:white;
 	position:relative;
 	top:30%;
 	margin:10px;
 }
-
 /* Page menu */
 #menu{
 	width:100%;
@@ -63,16 +55,19 @@ a{
 	background-color:#555;
 }
 .m_div{
+	color: #282828;
 	margin-left: 5px;
 	margin-bottom: 5px;
+	/* padding-right: 5px; */
 	text-align: center;
 	float:left;
-	background-color: #666;
+	background-image: url(../img/gray_square_button.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 .m_div *{
 	margin: 10px;
 }
-
 /* Page content */
 #content{
 	width:100%;
@@ -89,12 +84,19 @@ a{
 	margin: 15px;
 	margin-right: 0px;
 }
+#cont_box_2{
+	max-width: 1200px;
+	margin:auto;
+	padding: auto;
+}
 .clear_cont{
 	margin: 15px;
 	float: left;
 	text-align: left;
 }
-
+.img_div{
+	text-align:center;
+}
 /* Page fotter */
 #footer{
 	width:100%;
