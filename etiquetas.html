@@ -8,35 +8,44 @@
 </head>
 
 <body>
-<!-- Page header -->
-<div id="header">
 	<a name="inicio"></a>
-	<div id="headImgBox">
-		<a href="index.html"><img src="img/logo.png" id="headImg"/></a>
+	<!-- Page header -->
+	<div id="header">
+		<div id="sub_header">
+		<div id="headImgBox">
+			<a href="index.html"><img src="img/logo.png" id="headImg"/></a>
+		</div>
+		<div id="headTitleBox">
+			<h1 id="headTitle">Web HTML - Alejandro Luna Gómez</h1>
+		</div>
 	</div>
-	<div id="headTitleBox">
-		<h1 id="headTitle">Web HTML - Alejandro Luna Gómez</h1>
 	</div>
-</div>
-<!-- Page menu -->
-<div id="menu">
-	<a href="index.html"><div class="m_div"><h3 class="clear_a">Inicio</h3></div></a>
-	<a href="definiciones.html"><div class="m_div"><h3 class="clear_a">Definiciones</h3></div></a>
-	<a href="etiquetas.html"><div class="m_div"><h3 class="clear_a">Etiquetas</h3></div></a>
-	<a href="ejercicios.html"><div class="m_div"><h3 class="clear_a">Ejercicios</h3></div></a>
-</div>
+	<!-- Page menu -->
+	<div id="menu">
+		<div id="sub_menu">
+			<a href="index.html"><div class="m_div"><h3>Inicio</h3></div></a>
+			<a href="definiciones.html"><div class="m_div"><h3>Definiciones</h3></div></a>
+			<a href="etiquetas.html"><div class="m_div" id="m_selected"><h3>Etiquetas</h3></div></a>
+			<a href="ejercicios.html"><div class="m_div"><h3>Ejercicios</h3></div></a>
+		</div>
+	</div>
 <!-- Page content -->
 <div id="content">
 	<h2>Definiciones</h2>
-	<table>
-		<tr>
-			<td><a href="definiciones/etiquetas.html"><div class="cont_box"><h3>Etiquetas</h3></div></a></td>
-			<td><a href="definiciones/atributos.html"><div class="cont_box"><h3>Atributos</h3></div></a></td><tr>
-	</table>
+		<div id="cont_menu">
+			<a href="etiquetas/encabezados.html"><div class="cont_box"><h3>Encabezados</h3></div></a>
+			<a href="etiquetas/parrafos.html"><div class="cont_box"><h3>Párrafos</h3></div></a>
+			<a href="etiquetas/imagenes.html"><div class="cont_box"><h3>Imágenes</h3></div></a>
+			<a href="etiquetas/enlaces.html"><div class="cont_box"><h3>Enlaces</h3></div></a>
+			<a href="etiquetas/listas.html"><div class="cont_box"><h3>Listas</h3></div></a>
+			<a href="etiquetas/tablas.html"><div class="cont_box"><h3>Tablas</h3></div></a>
+			<a href="etiquetas/formatos.html"><div class="cont_box"><h3>Formatos</h3></div></a>
+			<a href="etiquetas/formularios.html"><div class="cont_box"><h3>Formularios</h3></div></a>
+		</div>
 </div>
 <!-- Page footer -->
 <div id="footer">
-	<h6>Copyright <a href="https://xellex.es" class="clear_a" target="_blank">XelleX.es</a></h6>
+	<h6 id="copyright">Copyright <a href="https://xellex.es" class="clear_a" target="_blank">XelleX.es</a></h6>
 </div>
 </body>
 </html>
