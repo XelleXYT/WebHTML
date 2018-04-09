@@ -5,6 +5,8 @@
 <title>Web HTML - Alejandro Luna Gómez</title>
 <link rel="icon" href="img/logo.png" sizes="192x192">
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -23,10 +25,44 @@
 	<!-- Page menu -->
 	<div id="menu">
 		<div id="sub_menu">
-			<a href="index.html"><div class="m_div" id="m_selected"><h3>Inicio</h3></div></a>
+		<!-- <a href="index.html"><div class="m_div" id="m_selected"><h3>Inicio</h3></div></a>
 			<a href="definiciones.html"><div class="m_div"><h3>Definiciones</h3></div></a>
 			<a href="etiquetas.html"><div class="m_div"><h3>Etiquetas</h3></div></a>
 			<a href="ejercicios.html"><div class="m_div"><h3>Ejercicios</h3></div></a>
+			<div class="m_div"><input type="text"></input></div> -->
+			<ul id="MenuBar1" class="MenuBarHorizontal">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Definiciones</a>
+					<ul>
+						<li><a href="#">Etiquetas</a></li>
+						<li><a href="#">Atributos</a></li>
+					</ul>
+				</li>
+				<li><a class="MenuBarItemSubmenu" href="#">Etiquetas</a>
+					<ul>
+						<li><a href="#">Encabezados</a></li>
+						<li><a href="#">Párrafos</a></li>
+						<li><a href="#">Imágenes</a></li>
+						<li><a href="#">Enlaces</a></li>
+						<li><a href="#">Listas</a></li>
+						<li><a href="#">Tablas</a></li>
+						<li><a href="#">Formatos</a></li>
+						<li><a href="#">Formularios</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Ejercicios</a>
+					<ul>
+						<li><a href="#">Encabezados</a></li>
+						<li><a href="#">Párrafos</a></li>
+						<li><a href="#">Imágenes</a></li>
+						<li><a href="#">Enlaces</a></li>
+						<li><a href="#">Listas</a></li>
+						<li><a href="#">Tablas</a></li>
+						<li><a href="#">Formatos</a></li>
+						<li><a href="#">Formularios</a></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 	</div>
 <!-- Page content -->
@@ -50,5 +86,8 @@
 <div id="footer">
 	<h6 id="copyright">Copyright <a href="https://xellex.es" class="clear_a" target="_blank">XelleX.es</a></h6>
 </div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
 </body>
 </html>
