@@ -16,6 +16,16 @@ a{
 a:hover{
 	color: #5e0a81;
 }
+#cuerpo{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 60%;
+}
+
 #goup{
 	width: 30px;
 	height: 30px;
@@ -52,19 +62,21 @@ a:hover{
 }
 #headImgBox{
 	float:left;
-	width:200px;
-	height:200px;
+	width:100px;
+	height:100px;
 	margin:10px;
 	margin-right: 25px;
+	margin-bottom: 5px;
 }
 #headImg{
-	width:200px;
-	height:200px;
+	width:100px;
+	height:100px;
 }
 #headTitleBox{
 	float:left;
 	margin-right:10px;
-	height:200px;
+	width: 70%;
+	/* height:200px; */
 }
 #headTitle{
 	color:white;
@@ -161,17 +173,37 @@ a:hover{
 	overflow: hidden;
 	display: block;
 }
+.publi_box2{
+	margin: 1%;
+	width: 12%;
+	float: right;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	display: block;
+}
+
 .publi_box img {
 	width: 100%;
 	display: block;
 }
+
+.publi_box2 img {
+	width: 100%;
+	display: block;
+}
+
 #cont_box_2{
 	border-radius: 8px;
-	max-width: 71%;
+	width: 73.5%;
 	height: 100%;
 	border-radius: ;
 	float: left;
 	margin:auto;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	padding: auto;
 	padding-top: 10px;
 	background-color:#5F5F5F;
@@ -179,6 +211,11 @@ a:hover{
 .cont_box_3{
 	max-width: 95%;
 	margin:auto;
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	padding: auto;
 }
 .clear_cont{
@@ -203,9 +240,53 @@ a:hover{
 	float:left;
 	background-color:#2F2F2F;
 }
+#footer *{
+	margin: auto;
+	padding: auto;
+}
+#footer img{
+	margin-left: 10px;
+	float: left;
+	height: 35px;
+	width: 35px;
+}
 #copyright{
 	margin-right:10px;
 	text-align:right;
+	position: relative;
+	right: 10px;
+	top: 10px;
 }
 #footer *{
+
+}
+
+@media (max-width:1200px){
+	#cuerpo{
+		width: 90%;
+	}
+}
+
+@media (max-width:720px){
+	#cuerpo{
+		width: 100%;
+	}
+	#headImgBox{
+		width:200px;
+		height:200px;
+		float: none;
+		margin: auto;
+		padding: auto;
+	}
+	#headImg{
+		width:200px;
+		height:200px;
+	}
+	#headTitleBox{
+		width: 70%;
+		float: none;
+		margin: auto;
+		padding: auto;
+		/* height:200px; */
+	}
 }

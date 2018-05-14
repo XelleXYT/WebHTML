@@ -2,15 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Web HTML - Alejandro Luna Gómez</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 <link rel="icon" href="img/logo.png" sizes="192x192">
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
-<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="css/flexslider.css" />
 </head>
 
 <body>
 	<a name="inicio"></a>
+	<div id="cuerpo">
 	<!-- Page header -->
 	<div id="header">
 		<div id="sub_header">
@@ -72,22 +77,62 @@
 		<div id="cont_box_2">
 			<!-- div class="clear_cont" -->
 				<h3>Navega por el menú superior para ver los distintos contenidos.</h3>
-				<img class="img" src="img/source.gif" width="500"/>
+				<br/>
+				<!-- Place somewhere in the <body> of your page -->
+				<div class="flexslider">
+				  <ul class="slides">
+						<li>
+							<img src="img/conexion.gif" />
+						</li>
+						<li>
+							<img src="img/cubo.gif" />
+						</li>
+						<li>
+							<img src="img/catrainbow.gif" />
+						</li>
+						<li>
+							<img src="img/openclose.gif" />
+						</li>
+						<li>
+							<img src="img/angryhacking.gif" />
+						</li>
+				    <!--
+						<li>
+				      <img src="imagen.jpg" />
+				    </li>
+						-->
+				  </ul>
+				</div>
+				<!-- img class="img" src="img/source.gif" width="500"/ -->
+				<br/>
 				<h3>Descripción:</h3>
 				<br/>
-				<p>Esta web trata de reunir la información básica del lenguaje HTML. Con esto intenta facilitar el acceso a etiquetas para conocer su uso y poder utilizarlas con mayor facilidad.</p>
+				<p>Esta web trata de reunir la información básica del lenguaje HTML.
+					 Con esto intenta facilitar el acceso a etiquetas para conocer su uso y poder utilizarlas con mayor facilidad.</p>
 				<br/>
 			<!-- /div -->
 		</div>
 	</div>
-	<a href="#"><div class="publi_box"><img src="img/publi2.jpg"/></div></a>
+	<a href="#"><div class="publi_box2"><img src="img/publi2.jpg"/></div></a>
 </div>
 <!-- Page footer -->
 <div id="footer">
+	<a href="#"><img src="img/facebook_logo.png"/></a>
+	<a href="#"><img src="img/twitter_logo.png"/></a>
 	<h6 id="copyright">Copyright <a href="https://xellex.es" class="clear_a" target="_blank">XelleX.es</a></h6>
+</div>
 </div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 </script>
+<script type="text/javascript">
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+</script>
+
 </body>
 </html>
