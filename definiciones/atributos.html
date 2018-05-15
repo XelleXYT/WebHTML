@@ -1,71 +1,137 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Web HTML - Alejandro Luna Gómez</title>
-<link rel="icon" href="../img/logo.png" sizes="192x192">
-<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Web HTML - Alejandro Luna Gómez</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<link rel="icon" href="../img/logo.png" sizes="192x192">
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" rel="stylesheet" href="../css/flexslider.css" />
 </head>
 
 <body>
-<a name="inicio"></a>
-<!-- Page header -->
-<div id="header">
-	<div id="sub_header">
-	<div id="headImgBox">
-		<a href="../index.html"><img src="../img/logo.png" id="headImg"/></a>
-	</div>
-	<div id="headTitleBox">
-		<h1 id="headTitle">Web HTML - Alejandro Luna Gómez</h1>
-	</div>
-</div>
-</div>
-<!-- Page menu -->
-<div id="menu">
-	<div id="sub_menu">
-	<a href="../index.html"><div class="m_div"><h3>Inicio</h3></div></a>
-	<a href="../definiciones.html"><div class="m_div" id="m_selected"><h3>Definiciones</h3></div></a>
-	<a href="../etiquetas.html"><div class="m_div"><h3>Etiquetas</h3></div></a>
-	<a href="../ejercicios.html"><div class="m_div"><h3>Ejercicios</h3></div></a>
-</div>
-</div>
-<!-- Page content -->
-<div id="content">
-	<div id="cont_box_2">
-	<h1>Atributos</h1>
-	<div class="clear_cont">
-			<br/>
-			<h2>Definición:</h2>
-			<p>Un <b>atributo</b> es un modificador de una etiqueta, que se encarga de pasarle parametros tales como <i>la posición, el tamaño, etc.</i> </p>
-			<br/>
-			<h2>Usos:</h2>
-			<p>Los atributos siempre dependen de la etiqueta a la que acompañen. Un atributo es definido de la siguiente forma:<pre>nombreAtributo="valorAtributo"</pre></p>
-			<p>Además una etiqueta puede contener varios atributos.</p>
-			<p><b>Ejemplo</b>: &ltp align="center" size="5"&gtEsto es un párrafo centrado con un tamaño de 5 pixels.&lt/p&gt - Contiene el atributo <b>center</b> y el atributo <b>size</b>.</p>
-			<br/>
-			<h2>Atributos:</h2>
-			<p>El uso de los atributos depende directamente de la etiqueta a la que modifiquen, pues cada etiqueta es distinta y atua sobre distintos objetos (<i>textos, imagenes, listas, tablas, etc.</i>).</p>
-			<br/>
-			<p>A su vez cada etiqueta dispone de distintos atributos. Vease en cada caso:</p>
-			<br/>
-				<ul type="disc">
-					<li><a href="../Etiquetas/encabezados.html#atributos">Encabezados</a></li>
-					<li><a href="../Etiquetas/parrafos.html#atributos">Párrafos</a></li>
-					<li><a href="../Etiquetas/imagenes.html#atributos">Imágenes</a></li>
-					<li><a href="../Etiquetas/enlaces.html#atributos">Enlaces</a></li>
-					<li><a href="../Etiquetas/listas.html#atributos">Listas</a></li>
-					<li><a href="../Etiquetas/tablas.html#atributos">Tablas</a></li>
-					<li><a href="../Etiquetas/formatos.html#atributos">Formatos</a></li>
-					<li><a href="../Etiquetas/formularios.html#atributos">Formularios</a></li>
+	<a name="inicio"></a>
+	<div id="cuerpo">
+		<!-- Page header -->
+		<div id="header">
+			<div id="sub_header">
+				<div id="headImgBox">
+					<a href="../index.html"><img src="../img/logo.png" id="headImg"/></a>
+				</div>
+				<div id="headTitleBox">
+					<h1 id="headTitle">Web HTML - Alejandro Luna Gómez</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Page menu -->
+		<div id="menu">
+			<div id="sub_menu">
+				<ul id="MenuBar1" class="MenuBarHorizontal">
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a>Definiciones</a>
+						<ul>
+							<li><a href="../definiciones/etiquetas.html">Etiquetas</a></li>
+							<li><a href="../definiciones/atributos.html">Atributos</a></li>
+						</ul>
+					</li>
+					<li><a>Etiquetas</a>
+						<ul>
+							<li><a href="../etiquetas/encabezados.html">Encabezados</a></li>
+							<li><a href="../etiquetas/parrafos.html">Párrafos</a></li>
+							<li><a href="../etiquetas/imagenes.html">Imágenes</a></li>
+							<li><a href="../etiquetas/enlaces.html">Enlaces</a></li>
+							<li><a href="../etiquetas/listas.html">Listas</a></li>
+							<li><a href="../etiquetas/tablas.html">Tablas</a></li>
+							<li><a href="../etiquetas/formatos.html">Formatos</a></li>
+							<li><a href="../etiquetas/formularios.html">Formularios</a></li>
+						</ul>
+					</li>
+					<li><a>Ejercicios</a>
+						<ul>
+							<li><a href="../ejercicios/encabezados1.html">Encabezados</a></li>
+							<li><a href="../ejercicios/parrafos1.html">Párrafos</a></li>
+							<li><a href="../ejercicios/imagenes1.html">Imágenes</a></li>
+							<li><a href="../ejercicios/enlaces1.html">Enlaces</a></li>
+							<li><a href="../ejercicios/listas1.html">Listas</a></li>
+							<li><a href="../ejercicios/tablas1.html">Tablas</a></li>
+							<li><a href="../ejercicios/formatos1.html">Formatos</a></li>
+							<li><a href="../ejercicios/formularios1.html">Formularios</a></li>
+						</ul>
+					</li>
 				</ul>
-			<br/>
-			<a href="#inicio" id="goup"></a>
+			</div>
+		</div>
+		<!-- Page content -->
+		<div id="content">
+			<div class="cont_box_3">
+				<a href="#">
+					<div class="publi_box"><img src="../img/publi1.jpg" /></div>
+				</a>
+				<!-- Contenido -->
+				<div id="cont_box_2">
+					<h1>Atributos</h1>
+					<div class="clear_cont">
+						<br/>
+						<h2>Definición:</h2>
+						<p>Un <b>atributo</b> es un modificador de una etiqueta, que se encarga de pasarle parametros tales como <i>la posición, el tamaño, etc.</i> </p>
+						<br/>
+						<h2>Usos:</h2>
+						<p>Los atributos siempre dependen de la etiqueta a la que acompañen. Un atributo es definido de la siguiente forma:<pre>nombreAtributo="valorAtributo"</pre></p>
+						<p>Además una etiqueta puede contener varios atributos.</p>
+						<p><b>Ejemplo</b>: &ltp align="center" size="5"&gt Esto es un párrafo centrado con un tamaño de 5 pixels.&lt/p&gt - Contiene el atributo <b>center</b> y el atributo <b>size</b>.</p>
+						<br/>
+						<h2>Atributos:</h2>
+						<p>El uso de los atributos depende directamente de la etiqueta a la que modifiquen, pues cada etiqueta es distinta y atua sobre distintos objetos (<i>textos, imagenes, listas, tablas, etc.</i>).</p>
+						<br/>
+						<p>A su vez cada etiqueta dispone de distintos atributos. Vease en cada caso:</p>
+						<br/>
+						<ul type="disc">
+							<li><a href="../etiquetas/encabezados.html#atributos">Encabezados</a></li>
+							<li><a href="../etiquetas/parrafos.html#atributos">Párrafos</a></li>
+							<li><a href="../etiquetas/imagenes.html#atributos">Imágenes</a></li>
+							<li><a href="../etiquetas/enlaces.html#atributos">Enlaces</a></li>
+							<li><a href="../etiquetas/listas.html#atributos">Listas</a></li>
+							<li><a href="../etiquetas/tablas.html#atributos">Tablas</a></li>
+							<li><a href="../etiquetas/formatos.html#atributos">Formatos</a></li>
+							<li><a href="../etiquetas/formularios.html#atributos">Formularios</a></li>
+						</ul>
+						<br/>
+						<a href="#inicio" id="goup"></a>
+					</div>
+				</div>
+				<!-- Fin contenido -->
+			</div>
+			<a href="#">
+				<div class="publi_box2"><img src="../img/publi2.jpg" /></div>
+			</a>
+		</div>
+		<!-- Page footer -->
+		<div id="footer">
+			<a href="#"><img src="../img/facebook_logo.png"/></a>
+			<a href="#"><img src="../img/twitter_logo.png"/></a>
+			<h6 id="tycypp"><a href="https://www.timeinc.net/subs/privacy/termsofservice/pptos.html">Terminos y Condiciones</a> | <a href="http://www.vocento.com/politica-privacidad">Politica de Privacidad</a></h6>
+			<h6 id="copyright">Copyright <a href="https://xellex.es" class="clear_a" target="_blank">XelleX.es</a></h6>
+		</div>
 	</div>
-	</div>
-</div>
-<!-- Page footer -->
-<div id="footer">
-	<h6 id="copyright">Copyright <a href="https://xellex.es" target="_blank">XelleX.es</a></h6>
-</div>
+	<script type="text/javascript">
+		var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {
+			imgDown: "../SpryAssets/SpryMenuBarDownHover.gif",
+			imgRight: "../SpryAssets/SpryMenuBarRightHover.gif"
+		});
+	</script>
+	<script type="text/javascript">
+		// Can also be used with $(document).ready()
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide"
+			});
+		});
+	</script>
 </body>
+
 </html>

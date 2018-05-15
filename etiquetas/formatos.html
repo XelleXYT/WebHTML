@@ -1,37 +1,141 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<title>Encabezados</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Web HTML - Alejandro Luna Gómez</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<link rel="icon" href="../img/logo.png" sizes="192x192">
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" rel="stylesheet" href="../css/flexslider.css" />
 </head>
-<body bgcolor="black" background="../img/fondo.jpg">
-<a name="inicio"></a>
-<font face="Verdana,Arial" color="white">
-	<h1 align="center">Formatos</h1>
-	<h2>Definici�n:</h2>
-	<p>Los formatos se utilizan para resaltar o marcar el texto. Hay varios tipos de formatos, estos pueden ser aplicados unos sobre otros.</p>
-	<p>Las etiquetas de los formatos son:</p>
-	<ul>
-		<li><b>&ltb&gt:</b> Para el texto en <b>negrita</b>.</li>
-		<li><b>&ltstrong&gt:</b> Para el texto <strong>importante</strong>.</li>
-		<li><b>&lti&gt:</b> Para el texto en <i>it�lica</i>.</li>
-		<li><b>&ltem&gt:</b> Para el texto <em>enfatizado</em>.</li>
-		<li><b>&ltmark&gt:</b> Para el texto <mark>marcado</mark>.</li>
-		<li><b>&ltsmall&gt:</b> Para el texto <small>peque�o</small>.</li>
-		<li><b>&ltdel&gt:</b> Para el texto <del>borrado</del>.</li>
-		<li><b>&ltins&gt:</b> Para el texto <ins>insertado</ins>.</li>
-		<li><b>&ltu&gt:</b> Para el texto <u>subrayado</u>.</li>
-		<li><b>&ltsup&gt:</b> Para los <sup>supra�ndices</sup>.</li>
-		<li><b>&ltsub&gt:</b> Para los <sub>sub�ndices</sub>.</li>
-	</ul>
-	<br/>
-	<h2>Atributos:</h2>
-		<p>Las etiquetas de formato de texto no disponen de atributos, excepto de los globales.</p>
-	<br/>
-	<a name="ejercicios"><h2>Ejercicios:</h2></a>
-		<ul>
-			<li><a href="../Ejercicios/formatos1.html"><font color="white">Ejercicio Formatos</font></a></li>
-		</ul>
-	<br/>
-	<h5 align="right"><a href="#inicio"><font color="white">Volver arriba</font></a></h5>
-</font>
+
+<body>
+	<a name="inicio"></a>
+	<div id="cuerpo">
+		<!-- Page header -->
+		<div id="header">
+			<div id="sub_header">
+				<div id="headImgBox">
+					<a href="../index.html"><img src="../img/logo.png" id="headImg"/></a>
+				</div>
+				<div id="headTitleBox">
+					<h1 id="headTitle">Web HTML - Alejandro Luna Gómez</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Page menu -->
+		<div id="menu">
+			<div id="sub_menu">
+				<ul id="MenuBar1" class="MenuBarHorizontal">
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a>Definiciones</a>
+						<ul>
+							<li><a href="../definiciones/etiquetas.html">Etiquetas</a></li>
+							<li><a href="../definiciones/atributos.html">Atributos</a></li>
+						</ul>
+					</li>
+					<li><a>Etiquetas</a>
+						<ul>
+							<li><a href="../etiquetas/encabezados.html">Encabezados</a></li>
+							<li><a href="../etiquetas/parrafos.html">Párrafos</a></li>
+							<li><a href="../etiquetas/imagenes.html">Imágenes</a></li>
+							<li><a href="../etiquetas/enlaces.html">Enlaces</a></li>
+							<li><a href="../etiquetas/listas.html">Listas</a></li>
+							<li><a href="../etiquetas/tablas.html">Tablas</a></li>
+							<li><a href="../etiquetas/formatos.html">Formatos</a></li>
+							<li><a href="../etiquetas/formularios.html">Formularios</a></li>
+						</ul>
+					</li>
+					<li><a>Ejercicios</a>
+						<ul>
+							<li><a href="../ejercicios/encabezados1.html">Encabezados</a></li>
+							<li><a href="../ejercicios/parrafos1.html">Párrafos</a></li>
+							<li><a href="../ejercicios/imagenes1.html">Imágenes</a></li>
+							<li><a href="../ejercicios/enlaces1.html">Enlaces</a></li>
+							<li><a href="../ejercicios/listas1.html">Listas</a></li>
+							<li><a href="../ejercicios/tablas1.html">Tablas</a></li>
+							<li><a href="../ejercicios/formatos1.html">Formatos</a></li>
+							<li><a href="../ejercicios/formularios1.html">Formularios</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Page content -->
+		<div id="content">
+			<div class="cont_box_3">
+				<a href="#">
+					<div class="publi_box"><img src="../img/publi1.jpg" /></div>
+				</a>
+				<!-- Contenido -->
+				<div id="cont_box_2">
+					<h1>Formatos</h1>
+					<div class="clear_cont">
+						<h2>Definición:</h2>
+						<p>Los formatos se utilizan para resaltar o marcar el texto. Hay varios tipos de formatos, estos pueden ser aplicados unos sobre otros.</p>
+						<p>Las etiquetas de los formatos son:</p>
+						<ul>
+							<li><b>&ltb&gt:</b> Para el texto en <b>negrita</b>.</li>
+							<li><b>&ltstrong&gt:</b> Para el texto <strong>importante</strong>.</li>
+							<li><b>&lti&gt:</b> Para el texto en <i>itálica</i>.</li>
+							<li><b>&ltem&gt:</b> Para el texto <em>enfatizado</em>.</li>
+							<li><b>&ltmark&gt:</b> Para el texto <mark>marcado</mark>.</li>
+							<li><b>&ltsmall&gt:</b> Para el texto <small>pequeño</small>.</li>
+							<li><b>&ltdel&gt:</b> Para el texto <del>borrado</del>.</li>
+							<li><b>&ltins&gt:</b> Para el texto <ins>insertado</ins>.</li>
+							<li><b>&ltu&gt:</b> Para el texto <u>subrayado</u>.</li>
+							<li><b>&ltsup&gt:</b> Para los <sup>supraíndices</sup>.</li>
+							<li><b>&ltsub&gt:</b> Para los <sub>subíndices</sub>.</li>
+						</ul>
+						<br/>
+						<h2>Atributos:</h2>
+						<p>Las etiquetas de formato de texto no disponen de atributos, excepto de los globales.</p>
+						<br/>
+						<a name="ejercicios"><h2>Ejercicios:</h2></a>
+						<ul>
+							<li>
+								<a href="../ejercicios/formatos1.html">
+									<font color="white">Ejercicio Formatos</font>
+								</a>
+							</li>
+						</ul>
+						<br/>
+						<a href="#inicio" id="goup"></a>
+					</div>
+				</div>
+				<!-- Fin contenido -->
+			</div>
+			<a href="#">
+				<div class="publi_box2"><img src="../img/publi2.jpg" /></div>
+			</a>
+		</div>
+		<!-- Page footer -->
+		<div id="footer">
+			<a href="#"><img src="../img/facebook_logo.png"/></a>
+			<a href="#"><img src="../img/twitter_logo.png"/></a>
+			<h6 id="tycypp"><a href="https://www.timeinc.net/subs/privacy/termsofservice/pptos.html">Terminos y Condiciones</a> | <a href="http://www.vocento.com/politica-privacidad">Politica de Privacidad</a></h6>
+			<h6 id="copyright">Copyright <a href="https://xellex.es" class="clear_a" target="_blank">XelleX.es</a></h6>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {
+			imgDown: "../SpryAssets/SpryMenuBarDownHover.gif",
+			imgRight: "../SpryAssets/SpryMenuBarRightHover.gif"
+		});
+	</script>
+	<script type="text/javascript">
+		// Can also be used with $(document).ready()
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide"
+			});
+		});
+	</script>
 </body>
+
 </html>

@@ -1,72 +1,165 @@
-<html>
-<head>
-	<title>Listas - Alejandro Luna Gómez</title>
-</head>
-<body bgcolor="black" background="../img/fondo.jpg">
-<a name="inicio"></a>
-<font face="Verdana,Arial" color="white">
-	<h1 align="center">Listas</h1>
-	<h2>Formato:</h2>
-	<p>Hay varios tipos de listas, estos se muestran a continuación: </p>
-	<ul>
-		<li><b>&ltul&gt</b> para el inicio y <b>&lt/ul&gt</b> para el final de una lista desordenada.</li>
-		<li><b>&ltol&gt</b> para el inicio y <b>&lt/ol&gt</b> para el final de una lista ordenada.</li>
-		<li><b>&ltdl&gt</b> para el inicio y <b>&lt/dl&gt</b> para el final de una lista de definiciones.</li>
-	</ul>
-	<p>A su vez estas disponen de <b>&ltli&gt</b><b>&lt/li&gt</b>, <b>&ltdt&gt</b><b>&lt/dt&gt</b> para las de definiciones, que son utilizados para asignar valores en la lista.</p>
-	<br/>
-	<h2 name="atributos">Atributos:</h2>
-	<p>Las etiquetas disponen de distintos atributos:</p>
-	<ul>
-		<li>Las listas desordenadas:</li>
-		<br/>
-		<ul>
-			<li><b>compact</b> - compact - Especifica si la lista debe ser compactada</li>
-			<br/>
-			<li><b>type</b> - Especifica el símbolo a utilizar al comienzo del valor</li>
-			<ul>
-				<li type="disc">disc</li>
-				<li type="square">square</li>
-				<li type="circle">circle</li>
-			</ul>
-		</ul>
-		<br/>
-		<li>Las listas ordenadas:</li>
-		<br/>
-		<ul>
-			<li><b>compact</b> - compact - Especifica si la lista debe ser compactada</li>
-			<br/>
-			<li><b>reversed</b> - reversed - Especifica si el orden de los valores de la lista está invertido</li>
-			<br/>
-			<li><b>number</b> - número - Especifica el valor por el que empieza la lista</li>
-			<br/>
-			<li><b>type</b> - Especifica el tipo de caracter a utilizar al comienzo del valor</li>
-			<ol>
-				<li type="1"><b>1</b></li>
-				<li type="A"><b>A</b></li>
-				<li type="a"><b>a</b></li>
-				<li type="I"><b>I</b></li>
-				<li type="i"><b>i</b></li>
-			</ol>
-		</ul>
-		<br/>
-		<li>Las listas de definiciones solo disponen de definiciones introducidas en:<b>&ltdt&gt</b><b>&lt/dt&gt</b></li>
-		<br/>
-		<li>Valores de las listas (<b>&ltdt&gt</b><b>&lt/dt&gt</b>):</li>
-		<br/>
-		<ul>
-			<li><b>type</b> - Lo heredan de <b>&ltul&gt</b> u <b>&ltol&gt</b> y les sirve para cambiar su valor propio</li>
-			<li><b>value</b> - Solo funciona con las <b>&ltol&gt</b> y es heredado</li>
-		</ul>
-	</ul>	
-	<br/>
-	<a name="ejercicios"><h2>Ejercicios:</h2></a>
-		<ul>
-			<li><a href="../Ejercicios/listas1.html"><font color="white">Ejercicio Listas</font></a></li>
-		</ul>
-	<br/>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-	<h5 align="right"><a href="#inicio"><font color="white">Volver arriba</font></a></h5>
-</font>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Web HTML - Alejandro Luna GÃ³mez</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<link rel="icon" href="../img/logo.png" sizes="192x192">
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" rel="stylesheet" href="../css/flexslider.css" />
+</head>
+
+<body>
+	<a name="inicio"></a>
+	<div id="cuerpo">
+		<!-- Page header -->
+		<div id="header">
+			<div id="sub_header">
+				<div id="headImgBox">
+					<a href="../index.html"><img src="../img/logo.png" id="headImg"/></a>
+				</div>
+				<div id="headTitleBox">
+					<h1 id="headTitle">Web HTML - Alejandro Luna GÃ³mez</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Page menu -->
+		<div id="menu">
+			<div id="sub_menu">
+				<ul id="MenuBar1" class="MenuBarHorizontal">
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a>Definiciones</a>
+						<ul>
+							<li><a href="../definiciones/etiquetas.html">Etiquetas</a></li>
+							<li><a href="../definiciones/atributos.html">Atributos</a></li>
+						</ul>
+					</li>
+					<li><a>Etiquetas</a>
+						<ul>
+							<li><a href="../etiquetas/encabezados.html">Encabezados</a></li>
+							<li><a href="../etiquetas/parrafos.html">PÃ¡rrafos</a></li>
+							<li><a href="../etiquetas/imagenes.html">ImÃ¡genes</a></li>
+							<li><a href="../etiquetas/enlaces.html">Enlaces</a></li>
+							<li><a href="../etiquetas/listas.html">Listas</a></li>
+							<li><a href="../etiquetas/tablas.html">Tablas</a></li>
+							<li><a href="../etiquetas/formatos.html">Formatos</a></li>
+							<li><a href="../etiquetas/formularios.html">Formularios</a></li>
+						</ul>
+					</li>
+					<li><a>Ejercicios</a>
+						<ul>
+							<li><a href="../ejercicios/encabezados1.html">Encabezados</a></li>
+							<li><a href="../ejercicios/parrafos1.html">PÃ¡rrafos</a></li>
+							<li><a href="../ejercicios/imagenes1.html">ImÃ¡genes</a></li>
+							<li><a href="../ejercicios/enlaces1.html">Enlaces</a></li>
+							<li><a href="../ejercicios/listas1.html">Listas</a></li>
+							<li><a href="../ejercicios/tablas1.html">Tablas</a></li>
+							<li><a href="../ejercicios/formatos1.html">Formatos</a></li>
+							<li><a href="../ejercicios/formularios1.html">Formularios</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Page content -->
+		<div id="content">
+			<div class="cont_box_3">
+				<a href="#">
+					<div class="publi_box"><img src="../img/publi1.jpg" /></div>
+				</a>
+				<!-- Contenido -->
+				<div id="cont_box_2">
+					<h1>Listas</h1>
+					<div class="clear_cont">
+						<h2>Formato:</h2>
+						<p>Hay varios tipos de listas, estos se muestran a continuaciÃ³n: </p>
+						<ul>
+							<li><b>&ltul&gt</b> para el inicio y <b>&lt/ul&gt</b> para el final de una lista desordenada.</li>
+							<li><b>&ltol&gt</b> para el inicio y <b>&lt/ol&gt</b> para el final de una lista ordenada.</li>
+							<li><b>&ltdl&gt</b> para el inicio y <b>&lt/dl&gt</b> para el final de una lista de definiciones.</li>
+						</ul>
+						<p>A su vez estas disponen de <b>&ltli&gt</b><b>&lt/li&gt</b>, <b>&ltdt&gt</b><b>&lt/dt&gt</b> para las de definiciones, que son utilizados para asignar valores en la lista.</p>
+						<br/>
+						<h2 name="atributos">Atributos:</h2>
+						<p>Las etiquetas disponen de distintos atributos:</p>
+						<ul>
+							<li>Las listas desordenadas:</li>
+							<br/>
+							<ul>
+								<li><b>compact</b> - compact - Especifica si la lista debe ser compactada</li>
+								<br/>
+								<li><b>type</b> - Especifica el sÃ­mbolo a utilizar al comienzo del valor</li>
+								<ul>
+									<li type="disc">disc</li>
+									<li type="square">square</li>
+									<li type="circle">circle</li>
+								</ul>
+							</ul>
+							<br/>
+							<li>Las listas ordenadas:</li>
+							<br/>
+							<ul>
+								<li><b>compact</b> - compact - Especifica si la lista debe ser compactada</li>
+								<br/>
+								<li><b>reversed</b> - reversed - Especifica si el orden de los valores de la lista estï¿½ invertido</li>
+								<br/>
+								<li><b>number</b> - nÃºmero - Especifica el valor por el que empieza la lista</li>
+								<br/>
+								<li><b>type</b> - Especifica el tipo de caracter a utilizar al comienzo del valor</li>
+								<ol>
+									<li type="1"><b>1</b></li>
+									<li type="A"><b>A</b></li>
+									<li type="a"><b>a</b></li>
+									<li type="I"><b>I</b></li>
+									<li type="i"><b>i</b></li>
+								</ol>
+							</ul>
+							<br/>
+							<li>Las listas de definiciones solo disponen de definiciones introducidas en:<b>&ltdt&gt</b><b>&lt/dt&gt</b></li>
+							<br/>
+							<li>Valores de las listas (<b>&ltdt&gt</b><b>&lt/dt&gt</b>):</li>
+							<br/>
+							<ul>
+								<li><b>type</b> - Lo heredan de <b>&ltul&gt</b> u <b>&ltol&gt</b> y les sirve para cambiar su valor propio</li>
+								<li><b>value</b> - Solo funciona con las <b>&ltol&gt</b> y es heredado</li>
+							</ul>
+						</ul>
+						<br/><a href="#inicio" id="goup"></a>
+					</div>
+				</div>
+				<!-- Fin contenido -->
+			</div>
+			<a href="#">
+				<div class="publi_box2"><img src="../img/publi2.jpg" /></div>
+			</a>
+		</div>
+		<!-- Page footer -->
+		<div id="footer">
+			<a href="#"><img src="../img/facebook_logo.png"/></a>
+			<a href="#"><img src="../img/twitter_logo.png"/></a>
+			<h6 id="tycypp"><a href="https://www.timeinc.net/subs/privacy/termsofservice/pptos.html">Terminos y Condiciones</a> | <a href="http://www.vocento.com/politica-privacidad">Politica de Privacidad</a></h6>
+			<h6 id="copyright">Copyright <a href="https://xellex.es" class="clear_a" target="_blank">XelleX.es</a></h6>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {
+			imgDown: "../SpryAssets/SpryMenuBarDownHover.gif",
+			imgRight: "../SpryAssets/SpryMenuBarRightHover.gif"
+		});
+	</script>
+	<script type="text/javascript">
+		// Can also be used with $(document).ready()
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide"
+			});
+		});
+	</script>
 </body>
+
 </html>

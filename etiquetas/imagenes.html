@@ -1,67 +1,161 @@
-<html>
-<head>
-	<title>Im�genes - Alejandro Luna G�mez</title>
-</head>
-<body bgcolor="black" background="../img/fondo.jpg">
-<a name="inicio"></a>
-<font face="Verdana,Arial" color="white">
-	<h1 align="center">Im�genes</h1>
-	<h2>Formato:</h2>
-	<p>Para introducir una imagen se utiliza la etiqueta: </p>
-	<ul>
-		<li><b>&ltimg</b> para el inicio y <b>/&gt</b> para el final.</li>
-	</ul>
-	<br/>
-	<h2 name="atributos">Atributos:</h2>
-		<p>La etiqueta img dispone de varios atributos:</p>
-		<ul>
-			<li><b>align</b> - valor - Para alinear la imagen</li>
-			<ul>
-				<li>top</li>
-				<li>bottom</li>
-				<li>middle</li>
-				<li>left</li>
-				<li>right</li>
-			</ul>
-			<br/>
-			<li><b>alt</b> - texto - Texto alternativo</li>
-			<br/>
-			<li><b>border</b> - pixels - Tama�o del borde</li>
-			<br/>
-			<li><b>crossorigin</b> - valor - Acceso a webs de terceros</li>
-			<ul>
-				<li>anonymous</li>
-				<li>use-credentials</li>
-			</ul>
-			<br/>
-			<li><b>height</b> - pixels - Alto de la imagen</li>
-			<br/>
-			<li><b>hspace</b> - pixels - Margen con el texto horizontal</li>
-			<br/>
-			<li><b>ismap</b> - ismap - Mapa de la imagen</li>
-			<br/>
-			<li><b>longdesc</b> - URL - Descripci�n detallada de la imagen</li>
-			<br/>
-			<li><b>sizes</b> - Tama�o de la imagen</li>
-			<br/>
-			<li><b>src</b> - URL - Ruta de la imagen</li>
-			<br/>
-			<li><b>srcset</b> - URL - Ruta de la imagen variante</li>
-			<br/>
-			<li><b>usemap</b> - #nombremapa - Usar mapa de la imagen</li>
-			<br/>
-			<li><b>vspace</b> - pixels - Margen con el texto vertical</li>
-			<br/>
-			<li><b>width</b> - pixels - Ancho de la imagen</li>
-		</ul>
-	<br/>
-	<a name="ejercicios"><h2>Ejercicios:</h2></a>
-		<ul>
-			<li><a href="../Ejercicios/imagenes1.html"><font color="white">Ejercicio Im�genes</font></a></li>
-		</ul>
-	<br/>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-	<h5 align="right"><a href="#inicio"><font color="white">Volver arriba</font></a></h5>
-</font>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Web HTML - Alejandro Luna Gómez</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<link rel="icon" href="../img/logo.png" sizes="192x192">
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+	<link type="text/css" rel="stylesheet" href="../css/flexslider.css" />
+</head>
+
+<body>
+	<a name="inicio"></a>
+	<div id="cuerpo">
+		<!-- Page header -->
+		<div id="header">
+			<div id="sub_header">
+				<div id="headImgBox">
+					<a href="../index.html"><img src="../img/logo.png" id="headImg"/></a>
+				</div>
+				<div id="headTitleBox">
+					<h1 id="headTitle">Web HTML - Alejandro Luna Gómez</h1>
+				</div>
+			</div>
+		</div>
+		<!-- Page menu -->
+		<div id="menu">
+			<div id="sub_menu">
+				<ul id="MenuBar1" class="MenuBarHorizontal">
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a>Definiciones</a>
+						<ul>
+							<li><a href="../definiciones/etiquetas.html">Etiquetas</a></li>
+							<li><a href="../definiciones/atributos.html">Atributos</a></li>
+						</ul>
+					</li>
+					<li><a>Etiquetas</a>
+						<ul>
+							<li><a href="../etiquetas/encabezados.html">Encabezados</a></li>
+							<li><a href="../etiquetas/parrafos.html">Párrafos</a></li>
+							<li><a href="../etiquetas/imagenes.html">Imágenes</a></li>
+							<li><a href="../etiquetas/enlaces.html">Enlaces</a></li>
+							<li><a href="../etiquetas/listas.html">Listas</a></li>
+							<li><a href="../etiquetas/tablas.html">Tablas</a></li>
+							<li><a href="../etiquetas/formatos.html">Formatos</a></li>
+							<li><a href="../etiquetas/formularios.html">Formularios</a></li>
+						</ul>
+					</li>
+					<li><a>Ejercicios</a>
+						<ul>
+							<li><a href="../ejercicios/encabezados.html">Encabezados</a></li>
+							<li><a href="../ejercicios/parrafos.html">Párrafos</a></li>
+							<li><a href="../ejercicios/imagenes.html">Imágenes</a></li>
+							<li><a href="../ejercicios/enlaces.html">Enlaces</a></li>
+							<li><a href="../ejercicios/listas.html">Listas</a></li>
+							<li><a href="../ejercicios/tablas.html">Tablas</a></li>
+							<li><a href="../ejercicios/formatos.html">Formatos</a></li>
+							<li><a href="../ejercicios/formularios.html">Formularios</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Page content -->
+		<div id="content">
+			<div class="cont_box_3">
+				<a href="#">
+					<div class="publi_box"><img src="../img/publi1.jpg" /></div>
+				</a>
+				<!-- Contenido -->
+				<div id="cont_box_2">
+					<h1>Imágenes</h1>
+					<div class="clear_cont">
+						<h2>Formato:</h2>
+						<p>Para introducir una imagen se utiliza la etiqueta: </p>
+						<ul>
+							<li><b>&ltimg</b> para el inicio y <b>/&gt</b> para el final.</li>
+						</ul>
+						<br/>
+						<h2 name="atributos">Atributos:</h2>
+						<p>La etiqueta img dispone de varios atributos:</p>
+						<ul>
+							<li><b>align</b> - valor - Para alinear la imagen</li>
+							<ul>
+								<li>top</li>
+								<li>bottom</li>
+								<li>middle</li>
+								<li>left</li>
+								<li>right</li>
+							</ul>
+							<br/>
+							<li><b>alt</b> - texto - Texto alternativo</li>
+							<br/>
+							<li><b>border</b> - pixels - Tamaño del borde</li>
+							<br/>
+							<li><b>crossorigin</b> - valor - Acceso a webs de terceros</li>
+							<ul>
+								<li>anonymous</li>
+								<li>use-credentials</li>
+							</ul>
+							<br/>
+							<li><b>height</b> - pixels - Alto de la imagen</li>
+							<br/>
+							<li><b>hspace</b> - pixels - Margen con el texto horizontal</li>
+							<br/>
+							<li><b>ismap</b> - ismap - Mapa de la imagen</li>
+							<br/>
+							<li><b>longdesc</b> - URL - Descripción detallada de la imagen</li>
+							<br/>
+							<li><b>sizes</b> - Tamaño de la imagen</li>
+							<br/>
+							<li><b>src</b> - URL - Ruta de la imagen</li>
+							<br/>
+							<li><b>srcset</b> - URL - Ruta de la imagen variante</li>
+							<br/>
+							<li><b>usemap</b> - #nombremapa - Usar mapa de la imagen</li>
+							<br/>
+							<li><b>vspace</b> - pixels - Margen con el texto vertical</li>
+							<br/>
+							<li><b>width</b> - pixels - Ancho de la imagen</li>
+						</ul>
+						<br/>
+						<a href="#inicio" id="goup"></a>
+					</div>
+				</div>
+				<!-- Fin contenido -->
+			</div>
+			<a href="#">
+				<div class="publi_box2"><img src="../img/publi2.jpg" /></div>
+			</a>
+		</div>
+		<!-- Page footer -->
+		<div id="footer">
+			<a href="#"><img src="../img/facebook_logo.png"/></a>
+			<a href="#"><img src="../img/twitter_logo.png"/></a>
+			<h6 id="tycypp"><a href="https://www.timeinc.net/subs/privacy/termsofservice/pptos.html">Terminos y Condiciones</a> | <a href="http://www.vocento.com/politica-privacidad">Politica de Privacidad</a></h6>
+			<h6 id="copyright">Copyright <a href="https://xellex.es" class="clear_a" target="_blank">XelleX.es</a></h6>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {
+			imgDown: "../SpryAssets/SpryMenuBarDownHover.gif",
+			imgRight: "../SpryAssets/SpryMenuBarRightHover.gif"
+		});
+	</script>
+	<script type="text/javascript">
+		// Can also be used with $(document).ready()
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide"
+			});
+		});
+	</script>
 </body>
+
 </html>
